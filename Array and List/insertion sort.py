@@ -10,7 +10,7 @@ for i in range(n):
 for i in range(1, n):
     j = i - 1
     key = num[i]
-    while j >= 0 and num[j]>key:
+    while j >= 0 and num[j] > key:
         num[j+1] = num[j]
         j -= 1
     num[j+1] = key
