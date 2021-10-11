@@ -1,21 +1,20 @@
 n = int(input())
 nums = input()
 num = nums.split()
-min = 101
-min_idx = 0
+max = 0
+max_idx = 0
 
 for i in range(n):
     num[i] = (int)(num[i])
 
-for i in range(n):
-    for j in range(i, n):
-        if(num[j]<min):
-            min = num[j]
-            min_idx = j
-    tmp = num[i]
-    num[i] = min
-    num[min_idx] = tmp
-    min = 101
+sorted = False
+
+while not sorted:
+    sorted = True
+    for i in range(n-1):
+        if num[i] > num[i+1]:
+            num[i], num[i+1] = num[i+1], num[i]
+            sorted = False
 
 for i in range(n):
     print(num[i], end=' ')
