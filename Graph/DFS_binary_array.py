@@ -5,7 +5,6 @@ visited = [-1 for _ in range(n)]
 res = []
 
 while len(res) != len(graph):
-    print(stack, res)
     present = stack.pop()
     left = 2 * present + 1
     right = 2 * present + 2
