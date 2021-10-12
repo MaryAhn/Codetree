@@ -1,6 +1,6 @@
 coin = [1, 4, 5, 9]
 n = int(input())
-dp = [22 for _ in range(n+1)]
+dp = [n+1 for _ in range(n+1)]
 dp[0] = 0
 
 for i in range(n+1):

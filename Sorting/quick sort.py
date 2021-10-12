@@ -24,7 +24,6 @@ def partition(num, low, high):
 
 def quick_sort(num, low, high):
     if low < high:
-        print(low, high)
         pos = partition(num, low, high)
 
         quick_sort(num, low, pos-1)
